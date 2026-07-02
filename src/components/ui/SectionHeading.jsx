@@ -14,7 +14,7 @@ const SectionHeading = ({ title, subtitle, centered = true }) => {
           {title}
         </h2>
         {subtitle && (
-          <p className="text-zinc-600 dark:text-zinc-400 text-lg md:text-xl max-w-3xl mx-auto">
+          <p className={`text-zinc-600 dark:text-zinc-400 text-lg md:text-xl max-w-3xl mx-auto ${centered ? 'text-center' : 'text-left'}`}>
             {subtitle}
           </p>
         )}

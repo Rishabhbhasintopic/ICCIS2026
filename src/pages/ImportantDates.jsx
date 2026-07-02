@@ -4,12 +4,11 @@ import SectionHeading from '../components/ui/SectionHeading';
 import { Calendar, CheckCircle } from 'lucide-react';
 
 const dates = [
-  { event: "Paper Submission Deadline", date: "April 15, 2026", status: "upcoming" },
-  { event: "Notification of Acceptance", date: "May 30, 2026", status: "upcoming" },
-  { event: "Camera-Ready Submission", date: "June 15, 2026", status: "upcoming" },
-  { event: "Early Bird Registration", date: "June 30, 2026", status: "upcoming" },
-  { event: "Regular Registration", date: "July 15, 2026", status: "upcoming" },
-  { event: "Conference Dates", date: "July 23-24, 2026", status: "upcoming" },
+  { event: "Full Paper Submission", date: "June 27, 2026", status: "upcoming" },
+  { event: "Notification of Acceptance", date: "July 6, 2026", status: "upcoming" },
+  { event: "Author Registration Deadline", date: "July 13, 2026", status: "upcoming" },
+  { event: "Camera-Ready Submission", date: "July 15, 2026", status: "upcoming" },
+  { event: "Conference Dates", date: "July 17-18, 2026", status: "upcoming" },
 ];
 
 const ImportantDates = () => {
