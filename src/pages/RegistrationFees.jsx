@@ -126,23 +126,23 @@ const RegistrationFees = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
               <div className="glass-card p-5 rounded-xl border border-zinc-200 dark:border-zinc-800/50">
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-1">Account Name</p>
-                <p className="text-lg font-bold text-zinc-400 dark:text-zinc-600">Will be updated soon</p>
+                <p className="text-lg font-bold text-zinc-800 dark:text-zinc-200">Registrar, Guru Nanak Dev University, Amritsar</p>
               </div>
               <div className="glass-card p-5 rounded-xl border border-zinc-200 dark:border-zinc-800/50">
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-1">Bank Name</p>
-                <p className="text-lg font-bold text-zinc-400 dark:text-zinc-600">Will be updated soon</p>
+                <p className="text-lg font-bold text-zinc-800 dark:text-zinc-200">Punjab & Sind Bank</p>
               </div>
               <div className="glass-card p-5 rounded-xl border border-zinc-200 dark:border-zinc-800/50">
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-1">Account Number</p>
-                <p className="text-xl font-mono font-bold text-zinc-400 dark:text-zinc-600">Will be updated soon</p>
+                <p className="text-xl font-mono font-bold text-primary-600 dark:text-primary-400">02881000007953</p>
               </div>
               <div className="glass-card p-5 rounded-xl border border-zinc-200 dark:border-zinc-800/50">
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-1">IFSC Code</p>
-                <p className="text-xl font-mono font-bold text-zinc-400 dark:text-zinc-600">Will be updated soon</p>
+                <p className="text-xl font-mono font-bold text-accent-600 dark:text-accent-400">PSIB0000288</p>
               </div>
               <div className="glass-card p-5 rounded-xl border border-zinc-200 dark:border-zinc-800/50 md:col-span-2">
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-1">Account Type</p>
-                <p className="text-lg font-bold text-zinc-400 dark:text-zinc-600">Will be updated soon</p>
+                <p className="text-lg font-bold text-zinc-800 dark:text-zinc-200">Saving Account</p>
               </div>
             </div>
             <div className="bg-amber-50 dark:bg-amber-900/10 border border-amber-200 dark:border-amber-800/30 rounded-xl p-4 flex items-start">
