@@ -140,7 +140,7 @@ const Home = () => {
             {[
               { icon: BookOpen, title: "Scholarly Excellence", desc: "Showcase innovative research contributions through internationally recognized publication platforms." },
               { icon: Globe, title: "Global Innovative Platform", desc: "Gain global visibility and collaborate with participants worldwide." },
-              { icon: BookOpen, title: "Conference Proceedings", desc: "Accepted papers will appear in the official conference proceedings with potential indexing in Scopus." },
+              { icon: BookOpen, title: "GNDU Proceedings", desc: "Accepted papers will appear in the official GNDU proceedings." },
               { icon: Users, title: "Networking", desc: "Connect with industry leaders, researchers, and global academics." }
             ].map((feature, idx) => (
               <motion.div

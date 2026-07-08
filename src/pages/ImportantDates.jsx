@@ -6,8 +6,7 @@ import { Calendar, CheckCircle } from 'lucide-react';
 const dates = [
   { event: "Full Paper Submission", date: "June 27, 2026", status: "upcoming" },
   { event: "Notification of Acceptance", date: "July 6, 2026", status: "upcoming" },
-  { event: "Author Registration Deadline", date: "July 13, 2026", status: "upcoming" },
-  { event: "Camera-Ready Submission", date: "July 15, 2026", status: "upcoming" },
+  { event: "Author Registration Deadline", date: "July 12, 2026", status: "upcoming" },
   { event: "Conference Dates", date: "July 17-18, 2026", status: "upcoming" },
 ];
 

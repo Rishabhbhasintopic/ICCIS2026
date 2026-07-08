@@ -193,17 +193,10 @@ We welcome submissions in, but not limited to, the following thematic tracks:</p
   </li>
 </ul>
             <a
-              href={`${import.meta.env.BASE_URL}Microsoft_Word_Proceedings_Templates.zip`}
+              href={`${import.meta.env.BASE_URL}ICCIS2026_Sample_Format.docx`}
               className="inline-flex items-center px-4 py-2 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-700 text-zinc-900 dark:text-white rounded-lg transition-colors border border-zinc-700"
             >
-              <Download size={16} className="mr-2" /> Word Template for Paper Format 
-            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            
-            <a
-              href={`${import.meta.env.BASE_URL}LaTeX2e_Proceedings_Templates_download.zip`}
-              className="inline-flex items-center px-4 py-2 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-700 text-zinc-900 dark:text-white rounded-lg transition-colors border border-zinc-700"
-            >
-              <Download size={16} className="mr-2" /> LaTeX Template for Paper Format
+              <Download size={16} className="mr-2" /> Sample Paper Format (.docx)
             </a>
           
 
