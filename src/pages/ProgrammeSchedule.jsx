@@ -22,7 +22,7 @@ const scheduleData = {
     date: "17-07-2026",
     label: "Day 1",
     formattedDate: "Friday, July 17, 2026",
-    venue: "Main Auditorium & Seminar Hall",
+    venue: "Conference Hall, Guru Nanak Bhawan",
     events: [
       {
         id: "d1-e1",
@@ -106,12 +106,6 @@ const scheduleData = {
             role: "Special Lecture",
             affiliation: "Professor, Birla Institute of Technology, Mesra, Ranchi, Jharkhand",
             image: "speakers/vandana_bhattacharjee.jpg"
-          },
-          {
-            name: "Dr. Sugandh Seth",
-            role: "Special Lecture",
-            affiliation: "Postdoctoral Research Associate, University of Manchester, United Kingdom",
-            image: "speakers/Sugandh_seth.jfif"
           }
         ]
       }
@@ -121,7 +115,7 @@ const scheduleData = {
     date: "18-07-2026",
     label: "Day 2",
     formattedDate: "Saturday, July 18, 2026",
-    venue: "Main Auditorium & Seminar Hall",
+    venue: "Conference Hall, Guru Nanak Bhawan",
     events: [
       {
         id: "d2-e1",
@@ -164,6 +158,12 @@ const scheduleData = {
             role: "Special Lecture",
             affiliation: "Professor, Punjabi University, Patiala",
             image: "speakers/sukhjeet_kaur_ranade.jfif"
+          },
+          {
+            name: "Dr. Sugandh Seth",
+            role: "Special Lecture",
+            affiliation: "Postdoctoral Research Associate, University of Manchester, United Kingdom",
+            image: "speakers/Sugandh_seth.jfif"
           }
         ]
       },
@@ -186,13 +186,7 @@ const scheduleData = {
             name: "Prof. Karamjit Singh Chahal",
             role: "Registrar",
             affiliation: "Guru Nanak Dev University, Amritsar",
-            image: null
-          },
-          {
-            name: "Dr. Gurvinder Singh",
-            role: "Professor",
-            affiliation: "Deptt of Computer Science, GNDU",
-            image: "gurvinder-singh.jpg"
+            image: "karamjit-singh.jpg"
           },
           {
             name: "Dr. D. K. Lobiyal",

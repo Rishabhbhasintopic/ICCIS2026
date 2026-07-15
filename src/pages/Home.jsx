@@ -81,7 +81,7 @@ const Home = () => {
                 <div className="flex justify-center order-3 md:order-2 w-full md:w-auto mt-1 md:mt-0">
                   <div className="flex items-center text-zinc-700 dark:text-zinc-300 glass-card px-4 py-2 rounded-full text-xs sm:text-sm md:text-base text-center">
                     <MapPin className="text-accent-500 dark:text-accent-400 mr-1.5 sm:mr-2.5" size={16} />
-                    <span className="font-bold">Golden Jubilee Convention Center, GNDU</span>
+                    <span className="font-bold">Conference Hall, Guru Nanak Bhawan</span>
                   </div>
                 </div>
               </div>

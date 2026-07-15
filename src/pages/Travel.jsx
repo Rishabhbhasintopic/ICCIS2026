@@ -31,7 +31,7 @@ const Travel = () => {
               <h3 className="text-2xl font-bold text-zinc-900 dark:text-white mb-3">Venue Overview</h3>
               <p className="text-zinc-600 dark:text-zinc-400 text-lg leading-relaxed">
                 The International Conference on Computing Innovations for Sustainability (ICCIS2026) will be held at the{' '}
-                <span className="font-semibold text-zinc-900 dark:text-zinc-200">Golden Jubilee Convention Center, Guru Nanak Dev University (GNDU)</span>, 
+                <span className="font-semibold text-zinc-900 dark:text-zinc-200">Conference Hall, Guru Nanak Bhawan, Guru Nanak Dev University (GNDU)</span>, 
                 Amritsar, Punjab, India. GNDU is highly ranked and serves as a premier institution for research and education.
               </p>
             </div>

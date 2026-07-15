@@ -34,7 +34,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-bold text-zinc-900 dark:text-white mb-1">Conference Venue</h4>
                     <p className="text-zinc-600 dark:text-zinc-400">
-                      Conference Hall, Golden Jubilee Convention Center<br />
+                      Conference Hall, Guru Nanak Bhawan<br />
                       Guru Nanak Dev University, Amritsar<br />
                       Punjab, India
                     </p>

@@ -17,12 +17,6 @@ const speakers = [
     image: 'speakers/Emilia.jfif',
   },
   {
-    name: 'Dr. Sukhwinder Singh',
-    role: 'Professor',
-    affiliation: 'University Institute of Engineering & Technology, Panjab University, Chandigarh',
-    image: 'speakers/sukhwinder_singh.png',
-  },
-  {
     name: 'Dr. Sukhjeet Kaur Ranade',
     role: 'Professor, Department of Computer Science',
     affiliation: 'Punjabi University, Patiala',
@@ -41,22 +35,10 @@ const speakers = [
     image: 'speakers/amritpal-singh.jpg',
   },
   {
-    name: 'Dr. Arvinder Kaur',
-    role: 'Professor & Dean',
-    affiliation: 'University School of Automation & Robotics, Guru Gobind Singh Indraprastha University, Delhi',
-    image: 'speakers/Arvinder_kaur.jfif',
-  },
-  {
     name: 'Dr. Gurjit Singh',
     role: 'Assistant Professor',
     affiliation: 'University of Guelph, Guelph, Canada',
     image: 'speakers/Gurjit_singh.jfif',
-  },
-  {
-    name: 'Mr. Neeraj Dhawan',
-    role: 'Chairman & Managing Director',
-    affiliation: 'INVAS Technologies (P) Ltd., New Delhi',
-    image: 'speakers/Neeraj_dhawan.jfif',
   },
   {
     name: 'Dr. Sugandh Seth',
