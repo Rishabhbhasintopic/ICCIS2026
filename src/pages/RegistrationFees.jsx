@@ -103,17 +103,6 @@ const RegistrationFees = () => {
               * Conference Proceedings Publication may incur additional charges.
             </p>
           </motion.div>
-
-          <div className="mt-12 flex justify-center">
-            <div className="inline-flex items-center justify-center gap-3 px-8 py-4 text-lg font-bold rounded-full bg-gradient-to-r from-primary-600/10 to-accent-500/10 border border-primary-500/30 dark:border-primary-400/20 text-primary-700 dark:text-primary-300">
-              <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-primary-500"></span>
-              </span>
-              Registrations will start 6th July onwards — Stay tuned!
-            </div>
-          </div>
-
           {/* Payment Details Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}

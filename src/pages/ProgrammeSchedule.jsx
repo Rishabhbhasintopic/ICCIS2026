@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import SectionHeading from '../components/ui/SectionHeading';
-import { 
-  Clock, 
-  ArrowLeft, 
-  Calendar, 
-  Coffee, 
-  Utensils, 
-  Search, 
-  Award, 
-  Download, 
-  User, 
+import {
+  Clock,
+  ArrowLeft,
+  Calendar,
+  Coffee,
+  Utensils,
+  Search,
+  Award,
+  Download,
+  User,
   Filter,
   CheckCircle,
   MapPin
@@ -32,10 +32,10 @@ const scheduleData = {
         description: "Official opening ceremony of the conference, welcoming remarks, introduction of the conference theme, keynote address, and vote of thanks.",
         speakers: [
           {
-            name: "Prof. (Dr.) Karamjeet Singh",
-            role: "Chief Guest & Vice Chancellor",
+            name: "Dr. Harvinder Singh Saini",
+            role: "Chief Guest & Dean Academic Affairs",
             affiliation: "Guru Nanak Dev University, Amritsar",
-            image: "karamjit-singh.jpg"
+            image: "harvinder-singh.jpg"
           },
           {
             name: "Prof. (Dr) Kuljit Kaur Chahal",
@@ -53,7 +53,7 @@ const scheduleData = {
             name: "Mr. Rajesh Gupta",
             role: "Guest of Honour Address",
             affiliation: "GM Strategic Accounts, INVAS Technologies (P) Ltd., New Delhi",
-            image: null
+            image: "Rajesh_Gupta.jpg"
           },
           {
             name: "Dr. Gurvinder Singh",
@@ -215,17 +215,17 @@ const ProgrammeSchedule = () => {
 
   // Helper to filter events by search query and category filter
   const filteredEvents = activeDay.events.filter(event => {
-    const matchesSearch = 
+    const matchesSearch =
       event.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       event.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      event.speakers.some(speaker => 
+      event.speakers.some(speaker =>
         speaker.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         speaker.affiliation.toLowerCase().includes(searchQuery.toLowerCase()) ||
         (speaker.role && speaker.role.toLowerCase().includes(searchQuery.toLowerCase()))
       );
 
-    const matchesCategory = 
-      activeFilter === 'all' || 
+    const matchesCategory =
+      activeFilter === 'all' ||
       event.category === activeFilter;
 
     return matchesSearch && matchesCategory;
@@ -272,8 +272,8 @@ const ProgrammeSchedule = () => {
       <div className="absolute bottom-1/4 right-0 w-[500px] h-[500px] bg-accent-500/10 rounded-full blur-[120px] -z-10 pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading 
-          title="Program Schedule" 
+        <SectionHeading
+          title="Program Schedule"
           subtitle="Detailed conference agenda, sessions, special lectures, and speaker list."
         />
 
@@ -305,11 +305,10 @@ const ProgrammeSchedule = () => {
                       setActiveTab(dayKey);
                       // keep filter but reset search or adapt view
                     }}
-                    className={`relative px-6 py-3 rounded-xl font-heading font-semibold text-sm md:text-base transition-all duration-300 ${
-                      isActive 
-                        ? 'bg-gradient-to-r from-primary-600 to-primary-500 text-white shadow-lg' 
+                    className={`relative px-6 py-3 rounded-xl font-heading font-semibold text-sm md:text-base transition-all duration-300 ${isActive
+                        ? 'bg-gradient-to-r from-primary-600 to-primary-500 text-white shadow-lg'
                         : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
-                    }`}
+                      }`}
                   >
                     {day.label} ({day.date})
                   </button>
@@ -350,11 +349,10 @@ const ProgrammeSchedule = () => {
                   <button
                     key={filter.id}
                     onClick={() => setActiveFilter(filter.id)}
-                    className={`px-4 py-2 text-xs md:text-sm font-medium rounded-full transition-all border ${
-                      isActive 
+                    className={`px-4 py-2 text-xs md:text-sm font-medium rounded-full transition-all border ${isActive
                         ? 'bg-zinc-900 dark:bg-white text-white dark:text-zinc-950 border-zinc-900 dark:border-white shadow-sm'
                         : 'border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800/50 hover:text-zinc-900 dark:hover:text-white'
-                    }`}
+                      }`}
                   >
                     {filter.label}
                   </button>
@@ -394,9 +392,8 @@ const ProgrammeSchedule = () => {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.4, delay: eventIdx * 0.05 }}
-                      className={`relative flex flex-col md:flex-row gap-6 md:gap-10 items-start ${
-                        isBreak ? 'opacity-85' : ''
-                      }`}
+                      className={`relative flex flex-col md:flex-row gap-6 md:gap-10 items-start ${isBreak ? 'opacity-85' : ''
+                        }`}
                     >
                       {/* Timeline Dot/Icon */}
                       <div className="flex-shrink-0 z-10 hidden md:flex items-center justify-center w-16 h-16 rounded-2xl bg-white dark:bg-zinc-900 border-2 border-zinc-200 dark:border-zinc-800 shadow-md transform transition-all group-hover:scale-110 ml-0.5">
@@ -405,18 +402,17 @@ const ProgrammeSchedule = () => {
 
                       {/* Content Card */}
                       <div className="flex-grow w-full">
-                        <div className={`glass-card p-6 md:p-8 rounded-3xl border transition-all duration-300 hover:shadow-2xl relative ${
-                          isBreak 
-                            ? 'border-amber-500/10 dark:border-amber-500/5 bg-amber-500/[0.01] hover:border-amber-500/30' 
+                        <div className={`glass-card p-6 md:p-8 rounded-3xl border transition-all duration-300 hover:shadow-2xl relative ${isBreak
+                            ? 'border-amber-500/10 dark:border-amber-500/5 bg-amber-500/[0.01] hover:border-amber-500/30'
                             : 'border-zinc-200 dark:border-zinc-800/80 hover:border-primary-500/50 bg-white/60 dark:bg-zinc-900/60 backdrop-blur-xl'
-                        }`}>
+                          }`}>
                           {/* Top Badge & Time Row */}
                           <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
                             <div className="flex items-center gap-2">
                               <span className={`px-3 py-1 rounded-full text-xs font-semibold border ${getCategoryColor(event.category)}`}>
                                 {event.category.toUpperCase()}
                               </span>
-                              
+
                               <div className="flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400 text-sm font-mono font-medium ml-1">
                                 <Clock size={14} className="text-primary-500" />
                                 {event.time}
@@ -438,14 +434,14 @@ const ProgrammeSchedule = () => {
                           {event.speakers && event.speakers.length > 0 && (
                             <div className="pt-6 border-t border-zinc-150 dark:border-zinc-800/80">
                               <h4 className="text-xs font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider mb-4">
-                                {event.title === 'Valedictory Session' || event.title === 'Inaugural Ceremony' 
-                                  ? 'Speakers & Panelists' 
+                                {event.title === 'Valedictory Session' || event.title === 'Inaugural Ceremony'
+                                  ? 'Speakers & Panelists'
                                   : 'Speaker Details'}
                               </h4>
-                              
+
                               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
                                 {event.speakers.map((speaker, sIdx) => (
-                                  <div 
+                                  <div
                                     key={sIdx}
                                     className="flex items-start gap-4 p-3.5 rounded-2xl bg-zinc-50/50 dark:bg-zinc-950/30 border border-zinc-100 dark:border-zinc-800/30 hover:border-accent-500/20 dark:hover:border-accent-500/10 hover:bg-zinc-100/50 dark:hover:bg-zinc-950/50 transition-colors"
                                   >
@@ -463,10 +459,9 @@ const ProgrammeSchedule = () => {
                                             }}
                                           />
                                         ) : null}
-                                        <div 
-                                          className={`w-full h-full items-center justify-center font-bold text-xs text-primary-700 dark:text-primary-300 font-heading bg-primary-100 dark:bg-primary-950/50 ${
-                                            speaker.image ? 'hidden' : 'flex'
-                                          }`}
+                                        <div
+                                          className={`w-full h-full items-center justify-center font-bold text-xs text-primary-700 dark:text-primary-300 font-heading bg-primary-100 dark:bg-primary-950/50 ${speaker.image ? 'hidden' : 'flex'
+                                            }`}
                                         >
                                           {getInitials(speaker.name)}
                                         </div>
@@ -504,7 +499,7 @@ const ProgrammeSchedule = () => {
                   <p className="text-sm text-zinc-500 dark:text-zinc-400">
                     No events matches the filter or search phrase "{searchQuery}". Try clearing some parameters.
                   </p>
-                  <button 
+                  <button
                     onClick={() => {
                       setSearchQuery('');
                       setActiveFilter('all');
